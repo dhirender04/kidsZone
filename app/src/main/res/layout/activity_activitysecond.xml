@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitysecond"
+    android:layout_margin="16dp">
+
+
+    <GridLayout
+        android:id="@+id/gridlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/goatConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgGoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/goat"
+                android:tag="g"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="g"
+                android:text="G"
+                android:textSize="80sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/goatSpell"
+                app:layout_constraintTop_toBottomOf="@+id/imgGoat"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/goatSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="g"
+                android:text="Goat"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtG"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgGoat"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/horseConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgHorse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/horse"
+                android:tag="h"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="h"
+                android:text="H"
+                android:textSize="70sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/horseSpell"
+                app:layout_constraintTop_toBottomOf="@+id/imgHorse"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/horseSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="h"
+                android:text="Horse"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtH"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgHorse" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/icecreamConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgIceCream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/icecream"
+                android:tag="i"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="i"
+                android:text="I"
+                android:textSize="80sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/imgIceCream"
+                app:layout_constraintTop_toBottomOf="@+id/imgIceCream" />
+
+            <TextView
+                android:id="@+id/iceCreamSpell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="i"
+    android:text="IceCream"
+                android:textSize="35sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtI"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgIceCream" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/jokerConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgJoker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/joker"
+                android:tag="j"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="j"
+                android:text="J"
+                android:textSize="80sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/jokerSpell"
+                app:layout_constraintTop_toBottomOf="@+id/imgJoker" />
+
+            <TextView
+                android:id="@+id/jokerSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="j"
+                android:text="Joker"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtJ"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgJoker" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kiteConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgKite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/kite"
+                android:tag="k"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="k"
+                android:text="K"
+                android:textSize="80sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/kiteSpell"
+                app:layout_constraintTop_toBottomOf="@+id/imgKite" />
+
+            <TextView
+                android:id="@+id/kiteSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="k"
+                android:text="Kite"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtK"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgKite" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lionConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgLion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/lion"
+                android:tag="j"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="j"
+                android:text="J"
+                android:textSize="80sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/lionSpell"
+                app:layout_constraintTop_toBottomOf="@+id/imgLion" />
+
+            <TextView
+                android:id="@+id/lionSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="j"
+                android:text="Lion"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toRightOf="@+id/txtL"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLion" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </GridLayout>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
