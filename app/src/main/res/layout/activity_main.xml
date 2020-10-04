@@ -57,6 +57,7 @@
                 />
 
             <TextView
+                android:id="@+id/appleSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -102,6 +103,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imgBall" />
 
             <TextView
+                android:id="@+id/ballSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -145,6 +147,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imgCat" />
 
             <TextView
+                android:id="@+id/catSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -189,6 +192,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imgDog" />
 
             <TextView
+                android:id="@+id/dogSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -209,6 +213,7 @@
 
             <ImageButton
                 android:id="@+id/imgElephant"
+                android:src="@drawable/elephant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -218,7 +223,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/elephant" />
+                />
 
             <TextView
                 android:id="@+id/txtE"
@@ -230,9 +235,11 @@
                 android:text="E"
                 android:textSize="80sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgElephant" />
+                app:layout_constraintTop_toBottomOf="@id/imgElephant"
+                app:layout_constraintRight_toLeftOf="@id/elephantSpell"/>
 
             <TextView
+                android:id="@+id/elephantSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -277,6 +284,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imgFish" />
 
             <TextView
+                android:id="@+id/fishSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
