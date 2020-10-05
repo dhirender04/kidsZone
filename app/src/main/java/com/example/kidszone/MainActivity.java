@@ -2,9 +2,6 @@ package com.example.kidszone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.Manifest;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -12,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.time.chrono.MinguoChronology;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -163,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 //Next Activity Button//
             case R.id.nextLayout1:
-                Intent intent=new Intent(MainActivity.this,activitysecond.class);
+                Intent intent=new Intent(MainActivity.this, Activitysecond.class);
                 startActivity(intent);
         }
 

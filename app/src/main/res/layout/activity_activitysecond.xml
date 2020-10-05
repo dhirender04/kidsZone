@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitysecond"
+    tools:context=".Activitysecond"
     android:layout_margin="16dp">
 
 
@@ -240,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:src="@drawable/lion"
-                android:tag="j"
+                android:tag="l"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -249,8 +249,8 @@
                 android:id="@+id/txtL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:tag="j"
-                android:text="J"
+                android:tag="l"
+                android:text="L"
                 android:textSize="80sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/lionSpell"
@@ -260,7 +260,7 @@
                 android:id="@+id/lionSpell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:tag="j"
+                android:tag="l"
                 android:text="Lion"
                 android:textSize="40sp"
                 app:layout_constraintLeft_toRightOf="@+id/txtL"
@@ -273,6 +273,7 @@
     </GridLayout>
 
     <Button
+        android:id="@+id/nextLayout2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Next"
