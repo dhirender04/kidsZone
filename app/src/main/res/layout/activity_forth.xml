@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForthActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridlayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:rowCount="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/innerGridlayourYZ"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/umbrellaConstraint">
+            <ImageButton
+                android:id="@+id/imgUmbrella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/umbrella"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgUmbrella"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/umbrellaSpell"
+                />
+            <TextView
+                android:id="@+id/umbrellaSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umbrella"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgUmbrella"
+                app:layout_constraintLeft_toRightOf="@+id/txtU"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/vanConstraint">
+            <ImageButton
+                android:id="@+id/imgVan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/van"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgVan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vanSpell"
+                />
+            <TextView
+                android:id="@+id/vanSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Van"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgVan"
+                app:layout_constraintLeft_toRightOf="@+id/txtV"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/womenConstraint">
+            <ImageButton
+                android:id="@+id/imgWomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/women"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgWomen"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/womenSpell"
+                />
+            <TextView
+                android:id="@+id/womenSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Women"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgWomen"
+                app:layout_constraintLeft_toRightOf="@+id/txtW"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/xmasConstraint">
+            <ImageButton
+                android:id="@+id/imgXmas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xmas"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgXmas"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/XmasSpell"
+                />
+            <TextView
+                android:id="@+id/XmasSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xmas"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgXmas"
+                app:layout_constraintLeft_toRightOf="@+id/txtX"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+    <GridLayout
+        android:id="@+id/innerGridlayourYZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/gridlayout4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/YakConstraint">
+
+            <ImageButton
+                android:id="@+id/imgYak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yak"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgYak"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/YakSpell"
+                />
+            <TextView
+                android:id="@+id/YakSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yak"
+                android:textSize="45sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgYak"
+                app:layout_constraintLeft_toRightOf="@+id/txtY"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/ZebraConstraint">
+
+            <ImageButton
+                android:id="@+id/imgZebra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zebra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txtZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z"
+                android:textSize="60sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgZebra"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/zebraSpell"
+                />
+            <TextView
+                android:id="@+id/zebraSpell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zebra"
+                android:textSize="45sp"
+                app:layout_constraintTop_toBottomOf="@+id/imgZebra"
+                app:layout_constraintLeft_toRightOf="@+id/txtZ"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </GridLayout>
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.example.kidszone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ public class ActivityThird extends AppCompatActivity implements View.OnClickList
     private ImageButton imgMonkey,imgNest,imgOwl,imgPeacock,imgQueen,imgRat,imgShip,imgTiger;
     private TextView m,n,o,p,q,r,s,t;
     private TextView monkeySpell,nestSpell,owlSpell,peacockSpell,queenSpell,ratSpell,shipSpell,tigerSpell;
-    //private Button btnNext3;
+    private Button btnNext3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,9 @@ public class ActivityThird extends AppCompatActivity implements View.OnClickList
         shipSpell=findViewById(R.id.shipSpell);
        tigerSpell=findViewById(R.id.tigerSpell);
 
+       //Button id's
+        btnNext3=findViewById(R.id.nextLayout3);
+
 
         //Set On Click Listener//
 
@@ -83,6 +87,10 @@ public class ActivityThird extends AppCompatActivity implements View.OnClickList
         ratSpell.setOnClickListener(ActivityThird.this);
         shipSpell.setOnClickListener(ActivityThird.this);
         tigerSpell.setOnClickListener(ActivityThird.this);
+
+        //Button Set OnClickListener
+
+        btnNext3.setOnClickListener(ActivityThird.this);
 
 
 
@@ -184,6 +192,10 @@ public class ActivityThird extends AppCompatActivity implements View.OnClickList
             case R.id.tigerSpell:
                 playSound(tigerSpell.getTag().toString());
                 break;
+
+            case R.id.nextLayout3:
+                Intent intent= new Intent(ActivityThird.this,ForthActivity.class);
+                startActivity(intent);
         }
 
     }
